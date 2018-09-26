@@ -1,22 +1,15 @@
+class Greeter {
+  constructor(private f_name:string, private l_name:string) {}
 
+  showGreeting (){
+    const ban = document.getElementById("ban");
+    ban.innerHTML= ('Hello'+ ' ' + this.f_name+' ' + this.l_name+ '.');
+  }
+  hideGreeting (){
+    const ban = document.getElementById("ban");
+    ban.innerHTML= ('R1C2');
+  }
 
-class MyFirstProgram {
-  constructor(...argArray: Array<any>) {
-    this.printArgs(argArray);
-  }
-  printArgs(argArray) {
-    console.log(argArray);
-  }
-  runFirst(callback: Function) {
-    console.log('this method runs first!...');
-  }
-  rundLast() {
-    console.log('this method runs last!');
-  }
-  runMiddle() {
-    console.log('this code run in between the other two functions...!');
-  }
 }
 
-const newInstance = new MyFirstProgram("a", "b", "c");
-
+const greet = new Greeter('Gaby','Costilla');``
